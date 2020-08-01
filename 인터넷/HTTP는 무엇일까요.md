@@ -6,25 +6,26 @@ HTTP(Hyper Text Transfer Protocol) 는
 
 텍스트 기반의 통신 규약이며 <u>"인터넷에서 정보를 주고 받을 수 있는 프로토콜"</u> 을 의미한다. 
 
-80번 포트를 사용하며, [TCP]([https://github.com/hjyeon-n/BE_TIL/blob/master/%EC%9D%B8%ED%84%B0%EB%84%B7/%EC%9D%B8%ED%84%B0%EB%84%B7%EC%9D%80%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EC%9E%91%EB%8F%99%EB%90%A0%EA%B9%8C%EC%9A%94.md](https://github.com/hjyeon-n/BE_TIL/blob/master/인터넷/인터넷은 어떻게 작동될까요.md))와 [UDP](https://github.com/hjyeon-n/BE_TIL/blob/master/%EC%9D%B8%ED%84%B0%EB%84%B7/%EC%9D%B8%ED%84%B0%EB%84%B7%EC%9D%80%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EC%9E%91%EB%8F%99%EB%90%A0%EA%B9%8C%EC%9A%94.md)를 이용한다. 
+80번 포트를 사용하며, [TCP]([https://github.com/hjyeon-n/BE_TIL/blob/master/%EC%9D%B8%ED%84%B0%EB%84%B7/%EC%9D%B8%ED%84%B0%EB%84%B7%EC%9D%80%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EC%9E%91%EB%8F%99%EB%90%A0%EA%B9%8C%EC%9A%94.md])와 [UDP](https://github.com/hjyeon-n/BE_TIL/blob/master/%EC%9D%B8%ED%84%B0%EB%84%B7/%EC%9D%B8%ED%84%B0%EB%84%B7%EC%9D%80%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EC%9E%91%EB%8F%99%EB%90%A0%EA%B9%8C%EC%9A%94.md)를 이용한다. 
 
 HTTP는 웹에서만 사용하는 프로콜로 [TCP/IP](TCP/IP)를 기반으로 한 지점에서 다른 지점으로 요청과 응답을 전송한다.
 
-
+<br/>
 
 #### ❗ HTTP의 동작방식
 
-![image-20200801230651141](C:\Users\20gyr\AppData\Roaming\Typora\typora-user-images\image-20200801230651141.png)
 
+![캡처](https://user-images.githubusercontent.com/64277114/89104649-cde70700-d455-11ea-90c3-8465e3408601.JPG)
 [^Client 이미지]: Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 
 HTTP는 위의 그림처럼, client가 server에게 요청을 보내면 server가 응답하는 방식으로 동작한다.
+<br/>
 
 **✔** **요청 (Request)**
 
 - 클라이언트가 서버에게 연락하는 것을 의미하며 요청을 보낼 때 요청에 대한 정보도 함께 보낸다.
 
-  
+  <br/>
 
 **✔ 요청의 종류 (Request Method)**
 
@@ -34,7 +35,7 @@ HTTP는 위의 그림처럼, client가 server에게 요청을 보내면 server�
 - **PUT**: POST 방식과 유사한 전송 구조를 가진다. 헤더 이외에 데이터가 함께 전송된다. 서버에 지정한 콘텐츠를 저장하기 위해 사용되며 홈페이지 변조에 많이 악용되고 있다.
 - **DELETE**: 웹 서버에 파일을 삭제하기 위해 사용된다. (PUT과 반대개념)
 
-
+<br/>
 
 **✔ Request 메시지 예시**
 
@@ -45,14 +46,14 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) ...	▶  헤더 (요청에
 Upgrade-Insecure-Requests: 1   
 
 ▶ 본문은 헤더에서 한 줄을 띄고 구성되며 데이터를 담아 보내는 부분이다. 현재 예시에서는 ❌
-
+<br/>
 
 
 **✔ 응답 (Response)**
 
 - 서버가 요청에 대한 답변을 클라이언트에 보내는 것이다.
 
-
+<br/>
 
 **✔ 응답 상태 코드 (Status Code)**
 
@@ -63,7 +64,7 @@ Upgrade-Insecure-Requests: 1
 - **5XX (서버 오류)**: 서버가 요청 수행헤 실패했음을 의미한다.
 
 
-
+<br/>
 **✔ 응답 메시지 예시**
 
 HTTP/1.1 200 OK   ▶  첫 줄은 버전, 상태 코드, 상태 메시지로 구성되어 있다.
@@ -80,7 +81,7 @@ Content-Encoding: gzip
 
 ▲ 본문 (HTML이 담겨 있으며 HTML을 통해 브라우저가 화면에 랜더링 한다. )
 
-
+<br/>
 
 #### ❗ HTTP의 특징
 
@@ -96,7 +97,7 @@ Content-Encoding: gzip
 
 4. TCP/IP 의 socket을 이용해 연결되는 응용 계층 프로토콜이다.
 
-
+<br/>
 
 #### ❗ HTTP 1.1 VS HTTP 2.0
 
