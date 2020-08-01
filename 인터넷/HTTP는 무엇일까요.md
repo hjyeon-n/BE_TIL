@@ -20,6 +20,7 @@ HTTP는 웹에서만 사용하는 프로콜로 [TCP/IP](TCP/IP)를 기반으로 
 [^Client 이미지]: Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 
 HTTP는 위의 그림처럼, client가 server에게 요청을 보내면 server가 응답하는 방식으로 동작한다.
+
 <br/>
 
 **✔** **요청 (Request)**
@@ -47,6 +48,7 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) ...	▶  헤더 (요청에
 Upgrade-Insecure-Requests: 1   
 
 ▶ 본문은 헤더에서 한 줄을 띄고 구성되며 데이터를 담아 보내는 부분이다. 현재 예시에서는 ❌
+
 <br/>
 
 
@@ -66,6 +68,7 @@ Upgrade-Insecure-Requests: 1
 
 
 <br/>
+
 **✔ 응답 메시지 예시**
 
 HTTP/1.1 200 OK   ▶  첫 줄은 버전, 상태 코드, 상태 메시지로 구성되어 있다.
