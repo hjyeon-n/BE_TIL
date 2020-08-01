@@ -6,7 +6,7 @@ HTTP(Hyper Text Transfer Protocol) 는
 
 텍스트 기반의 통신 규약이며 <u>"인터넷에서 정보를 주고 받을 수 있는 프로토콜"</u> 을 의미한다. 
 
-80번 포트를 사용하며, [TCP]([https://github.com/hjyeon-n/BE_TIL/blob/master/%EC%9D%B8%ED%84%B0%EB%84%B7/%EC%9D%B8%ED%84%B0%EB%84%B7%EC%9D%80%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EC%9E%91%EB%8F%99%EB%90%A0%EA%B9%8C%EC%9A%94.md])와 [UDP](https://github.com/hjyeon-n/BE_TIL/blob/master/%EC%9D%B8%ED%84%B0%EB%84%B7/%EC%9D%B8%ED%84%B0%EB%84%B7%EC%9D%80%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EC%9E%91%EB%8F%99%EB%90%A0%EA%B9%8C%EC%9A%94.md)를 이용한다. 
+80번 포트를 사용하며, [TCP](https://github.com/hjyeon-n/BE_TIL/blob/master/%EC%9D%B8%ED%84%B0%EB%84%B7/%EC%9D%B8%ED%84%B0%EB%84%B7%EC%9D%80%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EC%9E%91%EB%8F%99%EB%90%A0%EA%B9%8C%EC%9A%94.md) 와 [UDP](https://github.com/hjyeon-n/BE_TIL/blob/master/%EC%9D%B8%ED%84%B0%EB%84%B7/%EC%9D%B8%ED%84%B0%EB%84%B7%EC%9D%80%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EC%9E%91%EB%8F%99%EB%90%A0%EA%B9%8C%EC%9A%94.md)를 이용한다. 
 
 HTTP는 웹에서만 사용하는 프로콜로 [TCP/IP](TCP/IP)를 기반으로 한 지점에서 다른 지점으로 요청과 응답을 전송한다.
 
@@ -16,6 +16,7 @@ HTTP는 웹에서만 사용하는 프로콜로 [TCP/IP](TCP/IP)를 기반으로 
 
 
 ![캡처](https://user-images.githubusercontent.com/64277114/89104649-cde70700-d455-11ea-90c3-8465e3408601.JPG)
+<br/>
 [^Client 이미지]: Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 
 HTTP는 위의 그림처럼, client가 server에게 요청을 보내면 server가 응답하는 방식으로 동작한다.
