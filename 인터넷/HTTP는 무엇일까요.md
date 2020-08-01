@@ -1,6 +1,6 @@
 # HTTP는 무엇일까요?
 
-#### ❗ HTTP란?
+### ❗ HTTP란?
 
 HTTP(Hyper Text Transfer Protocol) 는 
 
@@ -12,7 +12,7 @@ HTTP는 웹에서만 사용하는 프로콜로 [TCP/IP](TCP/IP)를 기반으로 
 
 <br/>
 
-#### ❗ HTTP의 동작방식
+### ❗ HTTP의 동작방식
 
 
 ![캡처](https://user-images.githubusercontent.com/64277114/89104649-cde70700-d455-11ea-90c3-8465e3408601.JPG)
@@ -87,7 +87,7 @@ Content-Encoding: gzip
 
 <br/>
 
-#### ❗ HTTP의 특징
+### ❗ HTTP의 특징
 
 1. HTTP는 연결상태를 유지하지 않는 비연결성 프로콜이다.
 
@@ -103,7 +103,7 @@ Content-Encoding: gzip
 
 <br/>
 
-#### ❗ HTTP 1.1 VS HTTP 2.0
+### ❗ HTTP 1.1 VS HTTP 2.0
 
 - 처리 방식
   * HTTP 1.1 은 앞의 요청에 대한 응답을 받아야만 다음 요청이 처리될 수 있었다. (HOL 블로킹 발생)
