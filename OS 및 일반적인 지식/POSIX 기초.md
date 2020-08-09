@@ -141,6 +141,7 @@ int main(void) {
 			sleep(2);
 			break;
 	}
+	printf("End of fork\n");
 	return 0;
 }
 ```
