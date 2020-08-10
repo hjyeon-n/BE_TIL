@@ -1,5 +1,5 @@
 # BE_TIL
-Today I Learned🤸‍♀️
+### Today I Learned🤸‍♀️
 
 [@kong0527](https://github.com/kong0527)과 [@hjyeon-n](https://github.com/hjyeon-n) 이 매일매일 공부한 내용을 정리합니다 ✍
 
@@ -24,3 +24,14 @@ Today I Learned🤸‍♀️
 💚: 세마포어, 임계구역, 경쟁상태, context switching  간단 정리
 
 💗: 교착 상태, CPU 스케줄링 
+
+<br>
+
+<hr>
+
+### 2주차 달리기 🏃‍♀️👩‍🦽
+
+![image](https://user-images.githubusercontent.com/62419307/89752937-406c7c80-db11-11ea-9473-ae0e69c160ea.png)
+
+
+
