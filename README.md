@@ -31,7 +31,7 @@
 
 ### 2주차 달리기 🏃‍♀️👩‍🦽
 
-![image](https://user-images.githubusercontent.com/62419307/89752937-406c7c80-db11-11ea-9473-ae0e69c160ea.png)
+![image](https://user-images.githubusercontent.com/62419307/89760674-ce536200-db27-11ea-87dd-76d14bc34bb1.png)
 
 
 
