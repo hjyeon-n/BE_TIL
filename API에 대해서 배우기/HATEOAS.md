@@ -20,7 +20,7 @@
 
 👉 위 단점들을 LINK에 사용 가능한 URL을 리소스로 전달하여 클라이언트가 참고하여 사용할 수 있도록 해서 극복한다.
 
-➕ 이러한 링크정보를 JSON으로 표현한 사실상의 표준이 있는데, 바로 **HAL(Hpyertext Application Language)**이며, 컨텐트 타입은 application/hal+json이다. HAL을 사용하면 REST 자원을 표시하기 위한 자료 구조를 그때그때 따로 만들지 않아도 HATEOAS를 구현할수 있다.
+➕ 이러한 링크정보를 JSON으로 표현한 사실상의 표준이 있는데, 바로 **HAL(Hypertext Application Language)**이며, 컨텐트 타입은 application/hal+json이다. HAL을 사용하면 REST 자원을 표시하기 위한 자료 구조를 그때그때 따로 만들지 않아도 HATEOAS를 구현할수 있다.
 
  
 
