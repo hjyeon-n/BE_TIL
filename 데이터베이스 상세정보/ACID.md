@@ -2,7 +2,7 @@
 
 ### ❓ ACID란?
 
-데이터베이스 트랜잭션들이 안정적으로 수행되는 것을 보장하기 위한 성질을 가리키는 약어
+데이터베이스 [트랜잭션](https://github.com/hjyeon-n/BE_TIL/blob/master/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EC%83%81%EC%84%B8%EC%A0%95%EB%B3%B4/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98.md)들이 안정적으로 수행되는 것을 보장하기 위한 성질을 가리키는 약어
 
 <br/>
 
