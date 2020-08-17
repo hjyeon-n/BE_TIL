@@ -33,5 +33,13 @@
 
 ![image](https://user-images.githubusercontent.com/62419307/89760674-ce536200-db27-11ea-87dd-76d14bc34bb1.png)
 
+<br>
 
+### 3주차 달리기 🏃‍♀️👩‍🦽🚴‍♂️
+
+<br>
+
+![image](https://user-images.githubusercontent.com/62419307/90352471-73b58b00-e07e-11ea-9fd1-e5e25ab4273b.png)
+
+![image](https://user-images.githubusercontent.com/62419307/90352809-60ef8600-e07f-11ea-85db-f30432c0f3d4.png)
 
