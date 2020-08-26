@@ -35,6 +35,8 @@
 
 <br>
 
+<hr>
+
 ### 3주차 달리기 🏃‍♀️👩‍🦽🚴‍♂️
 
 <br>
@@ -42,4 +44,10 @@
 ![image](https://user-images.githubusercontent.com/62419307/90352471-73b58b00-e07e-11ea-9fd1-e5e25ab4273b.png)
 
 ![image](https://user-images.githubusercontent.com/62419307/90352809-60ef8600-e07f-11ea-85db-f30432c0f3d4.png)
+
+<br>
+
+<hr>
+
+#### 완주 성공! 😎(2020.08.25 최종 업데이트)
 
