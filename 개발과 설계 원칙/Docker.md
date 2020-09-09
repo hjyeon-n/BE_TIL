@@ -10,7 +10,7 @@ Go언어로 작성된 리눅스 **컨테이너 기반**으로하는 **오픈소�
 
 ### 컨테이너란? 📦
 
-![image-20200820174724074](C:\Users\jiyeon Hyun\AppData\Roaming\Typora\typora-user-images\image-20200820174724074.png)
+![image](https://user-images.githubusercontent.com/62419307/92597191-01814080-f2e2-11ea-9630-021aaf0893bb.png)
 
 컨테이너는 가상화 기술 중 하나로 대표적으로 LXC(Linux Container)가 있다. 기존 OS를 가상화 시키던 것과 달리 컨테이너는 **OS레벨의 가상화로 프로세스를 격리시켜 동작하는 방식**으로 이루어진다.
 
@@ -20,7 +20,7 @@ Go언어로 작성된 리눅스 **컨테이너 기반**으로하는 **오픈소�
 
 ![image](https://user-images.githubusercontent.com/62419307/90748332-03706900-e30d-11ea-9bba-ea56b57a9a39.png)
 
-VM같은 경우엔 Host OS 위에 가상화를 시키기 위한 Hypervisor 엔진 그리고 그 위에 Guest OS를 올려 사용한다. 이는 가상화된 하드웨어 위에 OS가 올라가는 형태로, Host OS와 완전히 분리되는 장점은 있지만 OS위에 OS를 올리기 때문에 무겁고 느릴수 밖에 없다.
+VM같은 경우엔 Host OS 위에 가상화를 시키기 위한 Hypervisor 엔진 그리고 그 위에 Guest OS를 올려 사용한다. 이는 가상화된 하드웨어 위에 OS가 올라가는 형태로, Host OS와 완전히 분리되는 장점은 있지만 OS위에 OS를 올리기 때문에 무겁고 느릴 수밖에 없다.
 
 반면에 컨테이너 기반 가상화는 Docker 엔진 위에 Application 실행에 필요한 바이너리만 올라가게 된다.  컨테이너 기반 가상화는 Host OS 그리고 Docker 엔진 위에서 바로 동작하며 Host의 커널을 공유한다. 커널을 공유하게 되면 io처리가 쉽게 되어 성능의 효율을 높일 수 있다. 즉, 컨테이너를 사용하는 것은 가상 머신을 생성하는 것이 아니라 Host OS가 사용하는 자원을 분리하여 여러 환경을 만들 수 있도록 하는 것이다. 
 
