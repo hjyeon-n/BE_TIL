@@ -53,6 +53,8 @@
 
 ✍ [ADD] AWS 개념 정리 (2020.09.08)
 
+✍ [ADD] AWS 배포 [후기](https://blog.naver.com/o____ri/222084109969) (2020.09.08)
+
 ✍ [ADD] DB JOIN & UNION (2020.09.24)
 
 ✍ [ADD] SQL 쿼리 (2020.09.24)
