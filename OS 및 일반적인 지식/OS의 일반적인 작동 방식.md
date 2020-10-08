@@ -71,6 +71,8 @@ OS는 Operating System의 약어로, 사용자와 하드웨어 간의 인터페�
    타이머는 무한루프나 자원의 독점을 막기 위해 사용된다.
 
    타이머는 특정 시간이 지나면 Interrupt를 발생시키고 운영체제는 그 시간을 감소시키며 Interrupt를 기다린다. 운영체제는 타이머가 끝난 작업을 종료시키고 실행 대기중인 작업의 Timer를 작동시킨다.
+   
+   🙋‍♀️ [Interrupt에 대해서 더 자세히 알고 싶다면?](https://gyoogle.dev/blog/computer-science/operating-system/Interrupt.html)
 
 <br/>
 
