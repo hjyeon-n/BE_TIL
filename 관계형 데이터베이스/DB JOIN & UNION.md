@@ -106,7 +106,7 @@ select * from a RIGHT OUTER JOIN b on a.a = b.b;
 select a.*,b.* from a,b where a.a(+) = b.b;
 ```
 
-![image-20200924132141535](C:\Users\jiyeon Hyun\AppData\Roaming\Typora\typora-user-images\image-20200924132141535.png)
+![image](https://user-images.githubusercontent.com/62419307/95991782-25e3b600-0e68-11eb-9129-87ebc8475e77.png)
 
 B의 모든 값과 A와 B의 공통적인 부분만 값이 나오고 A만 가지고 있는 값은 null로 나온다.
 
