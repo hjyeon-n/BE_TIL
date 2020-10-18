@@ -321,3 +321,72 @@ Spring MVC 는 Java EE의 Servlet Spec에 기반하여 만들어졌고 본질적
 동기-블록킹 방식은 함수를 호출하면 백그라운드 작업이 완료되었는지 계속 확인하고 완료되면 함수가 리턴되는 구조이고, 비동기-논 블록킹 방식은 함수를 호출하고 백그라운드 작업이 끝났는지 확인하지 않고 리턴을 하고 바로 다른 작업을 한다. 백그라운드 작업의 종료 여부는 이벤트로 수신한다. Webflux는 비동기-논블록킹 방식이다!
 
 [참고](https://hyunsoori.tistory.com/6?category=848670)
+
+<br>
+
+<hr>
+
+#### @RestController와 @Controller의 차이 😜
+
+전통적인 Spring MVC의 컨트롤러인 @Controller와 Restuful 웹서비스의 컨트롤러인 @RestController의 주요한 차이점은 HTTP Response Body가 생성되는 방식이다.
+
+<br>
+
+@Controller에서 View를 전달하는 방법
+
+![image](https://user-images.githubusercontent.com/62419307/96359771-997c1080-1151-11eb-9a95-f2e9ce9b364f.png)
+
+1. Client는 URI 형식으로 웹 서비스에 요청을 보낸다.
+2. Mapping되는 Handler와 그 Type을 찾는 DispatcherServlet이 요청을 인터셉트한다.
+3. Controller가 요청을 처리한 후에 응답을 DispatcherServlet으로 반환하고, DispatcherServlet은 View를 사용자에게 반환한다.
+
+<br>
+
+@Controller에서 data를 전달하는 방법
+
+Spring MVC의 컨트롤러에서도 Data를 반환해야 하는 경우도 있다! Spring MVC의 컨트롤러에서는 데이터를 반환하기 위해 @ResponseBody 어노테이션을 활용한다.
+
+![image](https://user-images.githubusercontent.com/62419307/96359790-cfb99000-1151-11eb-900d-43f73caee01d.png)
+
+1. Client는 URI 형식으로 웹 서비스에 요청을 보낸다.
+2. Mapping되는 Handler와 그 Type을 찾는 DispatcherServlet이 요청을 인터셉트한다.
+3. @ResponseBody를 사용하여 Client에게 Json 형태로 데이터를 반환한다.
+
+<br>
+
+@RestController는 Spring MVC Controller에 @ResponseBody가 추가된 것이다. RestController의 주용도는 Json 형태로 객체 데이터를 반환하는 것이다.
+
+![image](https://user-images.githubusercontent.com/62419307/96359820-14ddc200-1152-11eb-9068-4fb4557447d4.png)
+
+1. Client는 URI 형식으로 웹 서비스에 요청을 보낸다.
+2. Mapping되는 Handler와 그 Type을 찾는 DispatcherServlet이 요청을 인터셉트한다.
+3. RestController는 해당 요청을 처리하고 데이터를 반환한다.
+
+[참고](https://mangkyu.tistory.com/49)
+
+<br>
+
+<hr>
+
+#### Forward와 Redirect의 차이 😲
+
+사실 이미 알고 있기는 한데, 누가 물어보면 제대로 답을 하지 못할 것 같아서 다시 한 번 정리한다!
+
+**Forward**
+
+Forward는 Web Container 차원에서 페이지의 이동만 존재한다. 실제로 웹 브라우저는 다른 페이지로 이동했음을 알 수 없다. 그렇기 때문에 웹 브라우저에는 최초에 호출한 URL이 표시되고, 이동한 페이지의 URL 정보는 확인할 수 없다. 또한 현재 실행 중인 페이지와 forward에 의해 호출될 페이지는 Request 객체와 Response 객체를 공유한다.
+
+![image](https://user-images.githubusercontent.com/62419307/96359933-02b05380-1153-11eb-96e1-02e75dad84a2.png)
+
+만약 사용자가 실수 혹은 고의로 글쓰기 응답 페이지에서 새로고침을 누른다면, 요청 정보가 그대로 살아있기 때문에 요청이 여러 번 전달되어 동일한 게시물이 여러 번 등록될 수 있다. 그렇기 때문에 게시판을 제작하는 과정에서는 시스템에 변화가 생기지 않는 단순 조회 요청(글 목록 보기, 검색)의 경우일 때 forward로 응답하는 것이 바람직하다.
+
+<br>
+
+Redirect는 Web Container로 명령이 들어오면, 웹 브라우저에게 다른 페이지로 이동하라고 명령을 내린다. 그러면 웹 브라우저는 URL을 지시된 주소로 바꾸고 해당 주소로 이동한다. 다른 웹 컨테이너에 있는 주소로 이동하며 새로운 페이지에서는 Request와 Response객체가 새롭게 생성된다.
+
+![image](https://user-images.githubusercontent.com/62419307/96359984-88340380-1153-11eb-9679-d4b81955d686.png)
+
+게시판을 작성하는 과정이라고 할 때, redirect를 사용하여 응답 페이지를 부르면 사용자가 실수 혹은 고의로 글쓰기 응답 페이지에서 새로고침을 누른다고 하더라도, 처음의 요청 정보는 존재하지 않으므로 게시물이 여러 번 등록되지 않는다. 그렇기 때문에 시스템에 변화가 생기는 요청(회원가입, 글쓰기 등)의 경우에는 redirection을 사용하는 것이 바람직하다.
+
+[참고](https://mangkyu.tistory.com/51)
+
