@@ -106,13 +106,14 @@ bean은 스프링 컨테이너에 의해서 관리되고 애플리케이션의 �
 
 1. Annotation 을 이용한 자동 bean 검색 및 등록
 
-   : 특정 package( 들 에 속한 클래스들을 모두 검색하여 특정 annotation 이 붙은 클래스들에 대해 bean 을 자동 등록하는 기능
+   : 특정 package들 에 속한 클래스들을 모두 검색하여 특정 annotation 이 붙은 클래스들에 대해 bean 을 자동 등록하는 기능 
 
    ✅ @Component , @Controller, @Service, @Repository, @Aspect, @Configuration
 
    XML 또는 Java Config 클래스에서 명시적인 bean 설정 생략 가능
 
    : 의존 객체나 값 주입도 annotation 으로 설정
+
    ✅ @Autowired , @Qualifier, @Resource, @Value
 
    <br>
@@ -332,7 +333,7 @@ Spring MVC 는 Java EE의 Servlet Spec에 기반하여 만들어졌고 본질적
 
 <br>
 
-@Controller에서 View를 전달하는 방법
+**@Controller에서 View를 전달하는 방법**
 
 ![image](https://user-images.githubusercontent.com/62419307/96359771-997c1080-1151-11eb-9a95-f2e9ce9b364f.png)
 
@@ -342,7 +343,7 @@ Spring MVC 는 Java EE의 Servlet Spec에 기반하여 만들어졌고 본질적
 
 <br>
 
-@Controller에서 data를 전달하는 방법
+**@Controller에서 data를 전달하는 방법**
 
 Spring MVC의 컨트롤러에서도 Data를 반환해야 하는 경우도 있다! Spring MVC의 컨트롤러에서는 데이터를 반환하기 위해 @ResponseBody 어노테이션을 활용한다.
 
