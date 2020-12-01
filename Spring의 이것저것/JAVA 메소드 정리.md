@@ -6,7 +6,7 @@
 | [Collection](#Collection)   |
 | [Collections](#Collections) |
 | [List](#List)               |
-|                             |
+| [Map](#Map)                 |
 
 <br>
 
@@ -271,3 +271,176 @@ for(int key : map.keySet()){
 3 : three
 ```
 
+<br>
+
+### Map
+
+- put : Map에 key와 value 값 삽입
+
+```java
+// Map 인터페이스를 구현한 HashMap 사용
+HashMap<Integer, String> map = new HashMap<Integer, String>(); 
+
+map.put(1, "one");
+map.put(2, "two");
+map.put(3, "three");
+```
+
+
+
+- get : key와 매핑된 value 반환. 만약, key 값이 없을 땐 null을 반환
+
+```java
+System.out.println(map.get(1));
+System.out.println(map.get(5));
+```
+
+```java
+// 출력
+one
+null
+```
+
+
+
+- containsKey :  특정 key가 map에 있는지 판별
+
+```java
+System.out.println(map.containsKey(1));
+System.out.println(map.containsKey(5));
+```
+
+```java
+// 출력
+true
+false
+```
+
+
+
+- containsValue : 특정 value가 map에 있는지 판별
+
+```java
+System.out.println(map.containsValue("one"));
+System.out.println(map.containsValue("five"));
+```
+
+```java
+// 출력
+true
+false
+```
+
+
+
+- remove : 특정 key에 해당하는 값을 삭제
+
+```java
+map.remove(1);
+
+// map의 값 출력
+for(int key : map.keySet()){
+    String value = map.get(key);
+    System.out.println(key + " : " + value);
+}
+```
+
+```java
+// 출력
+2 : two
+3 : three
+```
+
+<br>
+
+### Set
+
+- add : Set에 요소 추가
+
+```java
+// Set 인터페이스를 구현한 HashSet 사용
+HashSet<String> set = new HashSet<String>();
+
+set.add("one");
+set.add("two");
+set.add("three");
+set.add("two");
+
+Iterator<String> iter = set.iterator();
+while(iter.hasNext()) {
+			System.out.println(iter.next());
+}
+```
+
+```java
+// 출력
+one
+two
+three
+```
+
+
+
+- containsAll : 한 Set에 있는 원소들이 다른 Set에 전부 포함되는지 확인. 즉, 부분집합인지 판별.
+
+```java
+// setA : 2, 5, 9, 12
+// setB : 3, 6, 9, 12
+System.out.println(setA.containsAll(setB));
+```
+
+```java
+// 출력
+false
+```
+
+
+
+- addAll : 한 Set에 있는 원소들과 다른 Set 원소들을 합침. 즉, 합집합을 의미함.
+
+```java
+// setA : 2, 5, 9, 12
+// setB : 3, 6, 9, 12
+
+setA.addAll(setB);
+System.out.println(setA.toString());
+```
+
+```java
+// 출력
+[12, 2, 3, 5, 6, 9]
+```
+
+
+
+- removeAll : 다른 Set에 포함된 공통적인 원소를 제거. 즉, 차집합을 의미함.
+
+```java
+// setA : 2, 5, 9, 12
+// setB : 3, 6, 9, 12
+
+setA.removeAll(setB);
+System.out.println(setA.toString());
+```
+
+```java
+// 출력
+[2, 5]
+```
+
+
+
+- retainAll : 다른 Set에 포함된 공통적인 원소들만 포함. 즉, 교집합을 의미함.
+
+```java
+// setA : 2, 5, 9, 12
+// setB : 3, 6, 9, 12
+
+setA.retainAll(setB);
+System.out.println(setA.toString());
+```
+
+```java
+// 출력
+[12, 9]
+```
