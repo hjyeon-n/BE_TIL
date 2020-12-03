@@ -444,3 +444,107 @@ System.out.println(setA.toString());
 // 출력
 [12, 9]
 ```
+
+<br>
+
+## Stack
+
+- push : 스택의 top에 값을 삽입
+
+```java
+Stack<String> stack = new Stack<String>();
+
+stack.push("one");
+stack.push("two");
+stack.push("three");
+
+System.out.println(stack.toString());
+```
+
+```java
+// 출력
+[one, two, three]
+```
+
+
+
+- pop : 스택의 top 값을 반환한 뒤에 삭제
+
+```java
+System.out.println(stack.pop());
+System.out.println(stack.toString());
+```
+
+```java
+// 출력
+three
+[one, two]
+```
+
+
+
+- peek : 스택의 top 값 조회
+
+```java
+// 현재 스택 값 : [one, two]
+System.out.println(stack.peek());
+System.out.println(stack.toString());
+```
+
+```java
+// 출력
+two
+[one, two]
+```
+
+<br>
+
+## Queue
+
+- offer : 큐의 뒤에 데이터를 삽입. add도 같은 역할을 하지만, 큐의 크기가 꽉 찼을 경우에 add는 예외를 발생시키지만 offer는 false를 반환.
+
+```java
+Queue<String> queue = new LinkedList<String>();
+
+queue.offer("one");
+queue.offer("two");
+queue.offer("three");
+
+System.out.println(queue.toString());
+```
+
+```java
+// 출력
+[one, two, three]
+```
+
+
+
+- poll : 큐의 맨 앞에 위치한 값을 반환한 뒤에 삭제
+
+```java
+System.out.println(queue.poll());
+System.out.println(queue.toString());
+```
+
+```java
+// 출력
+one
+[two, three]
+```
+
+
+
+- peek : 큐의 맨 앞에 위치한 값을 반환
+
+```java
+System.out.println(queue.peek());
+System.out.println(queue.toString());
+```
+
+```java
+// 출력
+two
+[two, three]
+```
+
