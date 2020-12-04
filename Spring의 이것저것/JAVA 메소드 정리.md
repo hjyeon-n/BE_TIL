@@ -7,6 +7,11 @@
 | [Collections](#Collections) |
 | [List](#List)               |
 | [Map](#Map)                 |
+| [Set](#Set)                 |
+| [Stack](#Stack)             |
+| [Queue](#Queue)             |
+| [Math](#Math)               |
+| [자료형](#자료형)           |
 
 <br>
 
@@ -193,7 +198,7 @@ System.out.println(list.size());
 
 <br>
 
-### Map
+### #Map
 
 - put : Map에 key와 value 값 삽입
 
@@ -273,87 +278,7 @@ for(int key : map.keySet()){
 
 <br>
 
-### Map
-
-- put : Map에 key와 value 값 삽입
-
-```java
-// Map 인터페이스를 구현한 HashMap 사용
-HashMap<Integer, String> map = new HashMap<Integer, String>(); 
-
-map.put(1, "one");
-map.put(2, "two");
-map.put(3, "three");
-```
-
-
-
-- get : key와 매핑된 value 반환. 만약, key 값이 없을 땐 null을 반환
-
-```java
-System.out.println(map.get(1));
-System.out.println(map.get(5));
-```
-
-```java
-// 출력
-one
-null
-```
-
-
-
-- containsKey :  특정 key가 map에 있는지 판별
-
-```java
-System.out.println(map.containsKey(1));
-System.out.println(map.containsKey(5));
-```
-
-```java
-// 출력
-true
-false
-```
-
-
-
-- containsValue : 특정 value가 map에 있는지 판별
-
-```java
-System.out.println(map.containsValue("one"));
-System.out.println(map.containsValue("five"));
-```
-
-```java
-// 출력
-true
-false
-```
-
-
-
-- remove : 특정 key에 해당하는 값을 삭제
-
-```java
-map.remove(1);
-
-// map의 값 출력
-for(int key : map.keySet()){
-    String value = map.get(key);
-    System.out.println(key + " : " + value);
-}
-```
-
-```java
-// 출력
-2 : two
-3 : three
-```
-
-<br>
-
-### Set
+### #Set
 
 - add : Set에 요소 추가
 
@@ -447,7 +372,7 @@ System.out.println(setA.toString());
 
 <br>
 
-## Stack
+### #Stack
 
 - push : 스택의 top에 값을 삽입
 
@@ -499,7 +424,7 @@ two
 
 <br>
 
-## Queue
+### #Queue
 
 - offer : 큐의 뒤에 데이터를 삽입. add도 같은 역할을 하지만, 큐의 크기가 꽉 찼을 경우에 add는 예외를 발생시키지만 offer는 false를 반환.
 
@@ -546,5 +471,121 @@ System.out.println(queue.toString());
 // 출력
 two
 [two, three]
+```
+
+
+
+### #Math
+
+- max : 두 인자 중 더 큰 값을 반환
+
+```java
+System.out.println(Math.max(15, 24));
+```
+
+```java
+// 출력
+24
+```
+
+
+
+- min : 두 인자 중 더 작은 값을 반환
+
+```java
+System.out.println(Math.min(15, 24));
+```
+
+```java
+// 출력
+15
+```
+
+
+
+- abs : 절댓값을 반환
+
+```java
+System.out.println(Math.abs(15));
+System.out.println(Math.abs(-8));
+```
+
+```java
+// 출력
+15
+8
+```
+
+
+
+- pow : 제곱 값을 반환. 앞의 인자는 밑, 뒤의 인자는 지수를 뜻함.
+
+```java
+System.out.println(Math.pow(5, 2));
+System.out.println(Math.pow(5, 3));
+```
+
+```java
+// 출력
+25.0
+125.0
+```
+
+
+
+- sqrt : 제곱근 반환
+
+```java
+System.out.println(Math.sqrt(25));
+System.out.println(Math.sqrt(16));
+```
+
+```java
+// 출력
+5.0
+4.0
+```
+
+
+
+### #자료형
+
+- parseInt : String을 int로 타입 변환. 단, 변환할 문자열이 숫자로 이루어져 있어야 한다. 또한 진수법 변환에도 사용된다.
+
+```java
+String str = "55";
+System.out.println(str.getClass().getName());
+
+int num = Integer.parseInt(str);
+// 연산은 숫자형 타입만 가능
+System.out.println("연산결과 = " + num + 5);
+
+// 10진수를 2진수로 변환
+System.out.println(Integer.parseInt("1010", 2));
+```
+
+```java
+// 출력
+java.lang.String
+연산결과 = 60
+10
+```
+
+
+
+- valueOf : String을 Integer 객체로 반환. 단, 변환할 문자열이 숫자로 이루어져 있어야 한다. 또는 int 타입을 Integer로 변환할 때도 사용한다.
+
+```java
+String str = "55";
+System.out.println(Integer.valueOf(str));
+
+int num = 90;
+System.out.println(Integer.valueOf(num).getClass().getName());
+```
+
+```java
+// 출력
+55
+java.lang.Integer
 ```
 
