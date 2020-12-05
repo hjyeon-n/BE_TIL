@@ -12,6 +12,7 @@
 | [Queue](#Queue)             |
 | [Math](#Math)               |
 | [자료형](#자료형)           |
+| [문자열](#문자열)           |
 
 <br>
 
@@ -587,5 +588,209 @@ System.out.println(Integer.valueOf(num).getClass().getName());
 // 출력
 55
 java.lang.Integer
+```
+
+<br>
+
+### #문자열
+
+- startsWith : 문자열이 특정 문자로 시작되는지 판별
+
+```java
+String str = "Hello World";
+System.out.println(str.startsWith("H"));
+System.out.println(str.startsWith("h"));
+```
+
+```java
+// 출력
+true
+false
+```
+
+
+
+- endswith : 문자열이 특정 문자로 끝나는지 판별
+
+```java
+String str = "Hello World";
+System.out.println(str.endsWith("d"));
+System.out.println(str.endsWith("D"));
+```
+
+```java
+// 출력
+true
+false
+```
+
+
+
+- equals : String 문자열 값 비교
+
+```java
+String str = "apple";
+System.out.println(str.equals("apple"));
+System.out.println(str.equals("banana"));
+```
+
+```java
+// 출력
+true
+false
+```
+
+
+
+- indexOf : 특정 문자가 대상 문자열의 몇 번째 인덱스에 위치하는지 반환
+
+```java
+String str = "apple";
+System.out.println(str.indexOf("a"));
+System.out.println(str.indexOf("p"));
+```
+
+```java
+// 출력
+0
+1
+```
+
+
+
+- substring : 지정한 범위에 속하는 문자열 반환
+
+```java
+String str = "Hello World";
+System.out.println(str.substring(0, 5));
+System.out.println(str.substring(4));
+```
+
+```java
+// 출력
+Hello
+o World
+```
+
+
+
+- replace : 특정 문자열을 새로운 문자열로 치환
+
+```java
+String str = "Hello World";
+System.out.println(str.replace("Hello", "hello~"));
+```
+
+```java
+// 출력
+hello~ World
+```
+
+
+
+- toLowerCase : 문자열을 소문자로 변환
+
+```java
+String str = "HELLO WORLD";
+System.out.println(str.toLowerCase());
+```
+
+```java
+// 출력
+hello world
+```
+
+
+
+- toUpperCase : 문자열을 대문자로 변환
+
+```java
+String str = "hello world";
+System.out.println(str.toUpperCase());
+```
+
+```java
+// 출력
+HELLO WORLD
+```
+
+
+
+- trim : 문자열 앞뒤의 공백 제거. 단, 문자열 내부의 공백은 replace를 사용해야 함.
+
+```java
+String str = "         hello world       ";
+System.out.println(str.trim());
+```
+
+```java
+// 출력
+hello world
+```
+
+
+
+- charAt : 문자열 특정 위치에 있는 문자 반환
+
+```java
+String str = "hello world";
+System.out.println(str.charAt(4));
+System.out.println(str.charAt(8));
+```
+
+```java
+// 출력
+o
+r
+```
+
+
+
+- valueOf : 지정된 값을 String으로 변환
+
+```java
+System.out.println(String.valueOf(5.0)); // double
+System.out.println(String.valueOf('A')); // char
+```
+
+```java
+// 출력
+5.0
+A
+```
+
+
+
+- contains : 특정 문자열이 포함되어있는지 확인
+
+```java
+String str = "Hello World";
+
+System.out.println(str.contains("Hello"));
+System.out.println(str.contains("Hi"));
+```
+
+```java
+// 출력
+true
+false
+```
+
+
+
+- split : 문자열을 특정 문자열을 기준으로 나눈 후, 배열을 반환
+
+```java
+String str = "Hello:World";
+String[] split = str.split(":");
+
+System.out.println(split[0]);
+System.out.println(split[1]);
+```
+
+```java
+// 출력
+Hello
+World
 ```
 
