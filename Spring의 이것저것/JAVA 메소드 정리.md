@@ -38,9 +38,7 @@ for (int i = 0; i < arr.length; i++) {
 1 5 26 38 59 74
 ```
 
-
-
-
+<br>
 
 - asList : 배열을 ArrayList로 변환
 
@@ -100,9 +98,7 @@ for (int i : list) {
 1 5 26 38 59 74
 ```
 
-
-
-
+<br>
 
 - max / min : 컬렉션 내의 최댓값 / 최솟값 반환
 
@@ -141,7 +137,7 @@ for (String str : list) {
 one two three
 ```
 
-
+<br>
 
 - get :  특정 인덱스 값 조회
 
@@ -154,7 +150,7 @@ System.out.println(list.get(2));
 three
 ```
 
-
+<br>
 
 - remove : 특정 값 삭제
 
@@ -173,7 +169,7 @@ list.remove(2);
 one two
 ```
 
-
+<br>
 
 - contains : 특정 원소가 리스트 내에 있는지 판별
 
@@ -188,7 +184,7 @@ true
 false
 ```
 
-
+<br>
 
 - size : 리스트 크기 반환
 
@@ -216,7 +212,7 @@ map.put(2, "two");
 map.put(3, "three");
 ```
 
-
+<br>
 
 - get : key와 매핑된 value 반환. 만약, key 값이 없을 땐 null을 반환
 
@@ -231,7 +227,7 @@ one
 null
 ```
 
-
+<br>
 
 - containsKey :  특정 key가 map에 있는지 판별
 
@@ -246,7 +242,7 @@ true
 false
 ```
 
-
+<br>
 
 - containsValue : 특정 value가 map에 있는지 판별
 
@@ -261,7 +257,7 @@ true
 false
 ```
 
-
+<br>
 
 - remove : 특정 key에 해당하는 값을 삭제
 
@@ -309,7 +305,7 @@ two
 three
 ```
 
-
+<br>
 
 - containsAll : 한 Set에 있는 원소들이 다른 Set에 전부 포함되는지 확인. 즉, 부분집합인지 판별.
 
@@ -324,7 +320,7 @@ System.out.println(setA.containsAll(setB));
 false
 ```
 
-
+<br>
 
 - addAll : 한 Set에 있는 원소들과 다른 Set 원소들을 합침. 즉, 합집합을 의미함.
 
@@ -341,7 +337,7 @@ System.out.println(setA.toString());
 [12, 2, 3, 5, 6, 9]
 ```
 
-
+<br>
 
 - removeAll : 다른 Set에 포함된 공통적인 원소를 제거. 즉, 차집합을 의미함.
 
@@ -358,7 +354,7 @@ System.out.println(setA.toString());
 [2, 5]
 ```
 
-
+<br>
 
 - retainAll : 다른 Set에 포함된 공통적인 원소들만 포함. 즉, 교집합을 의미함.
 
@@ -396,7 +392,7 @@ System.out.println(stack.toString());
 [one, two, three]
 ```
 
-
+<br>
 
 - pop : 스택의 top 값을 반환한 뒤에 삭제
 
@@ -411,7 +407,7 @@ three
 [one, two]
 ```
 
-
+<br>
 
 - peek : 스택의 top 값 조회
 
@@ -448,7 +444,7 @@ System.out.println(queue.toString());
 [one, two, three]
 ```
 
-
+<br>
 
 - poll : 큐의 맨 앞에 위치한 값을 반환한 뒤에 삭제
 
@@ -463,7 +459,7 @@ one
 [two, three]
 ```
 
-
+<br>
 
 - peek : 큐의 맨 앞에 위치한 값을 반환
 
@@ -493,7 +489,7 @@ System.out.println(Math.max(15, 24));
 24
 ```
 
-
+<br>
 
 - min : 두 인자 중 더 작은 값을 반환
 
@@ -506,7 +502,7 @@ System.out.println(Math.min(15, 24));
 15
 ```
 
-
+<br>
 
 - abs : 절댓값을 반환
 
@@ -521,7 +517,7 @@ System.out.println(Math.abs(-8));
 8
 ```
 
-
+<br>
 
 - pow : 제곱 값을 반환. 앞의 인자는 밑, 뒤의 인자는 지수를 뜻함.
 
@@ -536,7 +532,7 @@ System.out.println(Math.pow(5, 3));
 125.0
 ```
 
-
+<br>
 
 - sqrt : 제곱근 반환
 
@@ -576,7 +572,7 @@ java.lang.String
 10
 ```
 
-
+<br>
 
 - valueOf : String을 Integer 객체로 반환. 단, 변환할 문자열이 숫자로 이루어져 있어야 한다. 또는 int 타입을 Integer로 변환할 때도 사용한다.
 
@@ -612,7 +608,7 @@ true
 false
 ```
 
-
+<br>
 
 - endswith : 문자열이 특정 문자로 끝나는지 판별
 
@@ -628,7 +624,7 @@ true
 false
 ```
 
-
+<br>
 
 - equals : String 문자열 값 비교
 
@@ -644,7 +640,7 @@ true
 false
 ```
 
-
+<br>
 
 - indexOf : 특정 문자가 대상 문자열의 몇 번째 인덱스에 위치하는지 반환
 
@@ -660,7 +656,7 @@ System.out.println(str.indexOf("p"));
 1
 ```
 
-
+<br>
 
 - substring : 지정한 범위에 속하는 문자열 반환
 
@@ -676,7 +672,7 @@ Hello
 o World
 ```
 
-
+<br>
 
 - replace : 특정 문자열을 새로운 문자열로 치환
 
@@ -690,7 +686,7 @@ System.out.println(str.replace("Hello", "hello~"));
 hello~ World
 ```
 
-
+<br>
 
 - toLowerCase : 문자열을 소문자로 변환
 
@@ -704,7 +700,7 @@ System.out.println(str.toLowerCase());
 hello world
 ```
 
-
+<br>
 
 - toUpperCase : 문자열을 대문자로 변환
 
@@ -718,7 +714,7 @@ System.out.println(str.toUpperCase());
 HELLO WORLD
 ```
 
-
+<br>
 
 - trim : 문자열 앞뒤의 공백 제거. 단, 문자열 내부의 공백은 replace를 사용해야 함.
 
@@ -732,7 +728,7 @@ System.out.println(str.trim());
 hello world
 ```
 
-
+<br>
 
 - charAt : 문자열 특정 위치에 있는 문자 반환
 
@@ -748,7 +744,7 @@ o
 r
 ```
 
-
+<br>
 
 - valueOf : 지정된 값을 String으로 변환
 
@@ -763,7 +759,7 @@ System.out.println(String.valueOf('A')); // char
 A
 ```
 
-
+<br>
 
 - contains : 특정 문자열이 포함되어있는지 확인
 
@@ -780,7 +776,7 @@ true
 false
 ```
 
-
+<br>
 
 - split : 문자열을 특정 문자열을 기준으로 나눈 후, 배열을 반환
 
