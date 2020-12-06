@@ -40,6 +40,8 @@ for (int i = 0; i < arr.length; i++) {
 
 
 
+
+
 - asList : 배열을 ArrayList로 변환
 
 ```java
@@ -97,6 +99,8 @@ for (int i : list) {
 // 출력
 1 5 26 38 59 74
 ```
+
+
 
 
 
@@ -474,7 +478,7 @@ two
 [two, three]
 ```
 
-
+<br>
 
 ### #Math
 
@@ -547,7 +551,7 @@ System.out.println(Math.sqrt(16));
 4.0
 ```
 
-
+<br>
 
 ### #자료형
 
