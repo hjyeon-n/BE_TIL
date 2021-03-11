@@ -561,7 +561,7 @@ int num = Integer.parseInt(str);
 // 연산은 숫자형 타입만 가능
 System.out.println("연산결과 = " + num + 5);
 
-// 10진수를 2진수로 변환
+// 2진수를 10진수로 변환
 System.out.println(Integer.parseInt("1010", 2));
 ```
 
