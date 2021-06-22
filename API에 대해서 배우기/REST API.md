@@ -2,7 +2,7 @@
 
 ### ❓ REST란?
 
-Representational State Transfer의 약자
+**Representational State Transfer**의 약자
 
 월드 와이드 웹(www)과 같은 분산 하이퍼미디어 시스템을 위한 소프트웨어 개발 아키텍처의 형식
 
