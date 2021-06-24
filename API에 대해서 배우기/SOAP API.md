@@ -2,7 +2,7 @@
 
 ### ❓ SOAP API란?
 
-Simple Object Access Protocol 의 약자
+Simple Object Access Protocol 의 약자 🧼
 
 HTTP, HTTPS, SMTP등을 사용해 XML 기반의 메시지를 네트워크에서 교환하는 형태의 프로토콜
 
