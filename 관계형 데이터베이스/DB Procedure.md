@@ -66,8 +66,6 @@ Oracle's Procedure Language extension to SQL 의 약자로, 절차적 프로그�
 
     ![image](https://user-images.githubusercontent.com/62419307/123546356-368a5100-d797-11eb-81b2-7b4566c8f39d.png)
 
-    
-
   
-
+BEGIN, END는 필수로 작성해야 하는 부분이다.
   
