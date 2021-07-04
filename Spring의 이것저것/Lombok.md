@@ -4,3 +4,9 @@ Lombok(롬복)은 Annotation 방식으로 반복되는 코드 작성을 줄여�
 
 <br>
 
++ Getter, Setter 자동 생성
+  + @Getter / @Setter
++ 생성자 자동생성
+  + @NoArgsConstructor : 파라미터가 없는 default constructor 생성
+  + @AllArgsConstructor : 모든 필드 값을 파라미터로 받는 constructor 생성
+  + @RequiredArgsContructor : final이나 @NotNull인 필드 값을 파라미터로 받는 constructor 생성 
