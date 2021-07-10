@@ -10,6 +10,8 @@
 
 이런 REST의 형식을 따른 시스템을 RESTful 이라고 부름
 
+[참고하면 좋을 영상!](https://youtu.be/RP_f5dMoHFc)
+
 <br/>
 
 **✔ REST의 CRUD Operation**
