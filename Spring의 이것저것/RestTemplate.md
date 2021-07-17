@@ -10,4 +10,6 @@ Spring에서 제공하는 간편하게 RestAPI를 호출할 수 있는 템플릿
 
 <br>
 
-[참고](https://sjh836.tistory.com/141)
+[참고1](https://sjh836.tistory.com/141)
+
+[참고2](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html)
