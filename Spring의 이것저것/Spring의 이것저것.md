@@ -246,6 +246,8 @@ CGI는 특별한 라이브러리나 도구를 의미하는 것이 아니고, 별
 
 Thymeleaf는 HTML, XML, JavaScript, CSS 및 일반 텍스트를 처리 할 수 있는 웹 및 독립형 환경에서 사용할 수 있는 Java 템플릿 엔진이다.  Thymeleaf는 html파일을 가져와서 파싱해서 분석 후, 정해진 위치에 데이터를 치환해서 웹 페이지를 생성한다.
 
+[Thymeleaf 참고](https://www.thymeleaf.org/)
+
 **JSP**
 
 JSP는 서블릿으로 변환되어 실행이 된다. JSP 내에서 자바 코드를 사용할 수도 있다. (다만, 요즘은 지양하는 방식이다) Thymeleaf는 자바코드를 사용할 수 없고, jsp처럼 커스텀 태그와 같은 기능도 없다.
