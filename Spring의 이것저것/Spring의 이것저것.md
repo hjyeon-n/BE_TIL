@@ -68,6 +68,10 @@ mvn install : 로컬 저장소로 배포
 mvn deploy : 원격 저장소로 배포
 
 mvn clean : 빌드 과정에서 생긴 target 디렉토리 내용 삭제
+
+mvn compile : 프로젝트의 소스코드를 컴파일 하는 단계
+
+mvn validate : 프로젝트가 올바른지 확인하고 필요한 모든 정보를 사용할 수 있는지 확인하는 단계
 ```
 
 <br>
