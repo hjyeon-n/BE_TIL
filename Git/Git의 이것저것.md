@@ -34,3 +34,9 @@ ex) git push origin master
 git clone [원격 저장소 url]
 ```
 
+<br>
+
+**git fetch**
+
+: local repository에서 remote repository의 내용들을 업데이트
+
