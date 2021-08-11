@@ -40,3 +40,8 @@ git clone [원격 저장소 url]
 
 : local repository에서 remote repository의 내용들을 업데이트
 
+<br>
+
+**git pull**
+
+: git fetch + git merge
