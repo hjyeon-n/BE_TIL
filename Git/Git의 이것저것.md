@@ -45,3 +45,10 @@ git clone [원격 저장소 url]
 **git pull**
 
 : git fetch + git merge
+
+<br>
+
+**git stash**
+
+: 워킹 디렉토리에서 수정한 파일들만 저장
+
