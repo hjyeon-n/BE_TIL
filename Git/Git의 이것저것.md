@@ -38,7 +38,7 @@ git clone [원격 저장소 url]
 
 **git fetch**
 
-: local repository에서 remote repository의 내용들을 업데이트
+: local repository에서 remote repository의 내용들을 업데이트. local에 연결된 remote repository의 브랜치 목록과 그 파일 내용을 최신으로 업데이트 하는 명령어
 
 <br>
 
@@ -51,4 +51,6 @@ git clone [원격 저장소 url]
 **git stash**
 
 : 워킹 디렉토리에서 수정한 파일들만 저장
+
+<br>
 
