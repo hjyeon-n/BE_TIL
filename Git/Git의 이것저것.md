@@ -60,3 +60,10 @@ git clone [원격 저장소 url]
 
 [출처](https://victorydntmd.tistory.com/74)
 
+<br>
+
+### Git 기본용어
+
+**스테이징(Staging)**
+
+: 확정할 변경 사항을 준비시키는 것.
