@@ -399,5 +399,6 @@ Redirect는 Web Container로 명령이 들어오면, 웹 브라우저에게 다�
 
 <br>
 
-#### js와 jquery
+#### Javascript와 jQuery
 
+둘다 혼용해서 쓰길래 무슨 차이인가 했는데 jQuery는 Javascript의 라이브러리라고 생각하면 된다!
