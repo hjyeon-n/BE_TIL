@@ -12,7 +12,7 @@
 
 ### JavaScript 변수 범위
 
-##### 1. var
+#### 1. var
 
 + 중복 선언이 가능하다.
 
@@ -56,5 +56,31 @@
   
   console.log(a); // 10
   ```
+
+<br>
+
+#### 2. let
+
++ 중복선언 불가능
+
+  ```javascript
+  let a = 10; 
+  let a = 20; // SyntaxError: Identifier 'a' has already been declared
+  ```
+
+  <br>
+
++ 값 재할당 가능
+
+  ```javascript
+  let b = 10; 
+  b = 20; 
+  
+  console.log(b); // 20
+  ```
+
+  <br>
+
++ 함수 내부는 물론, if문이나 for문 등의 코드 블럭에서 선언된 변수도 지역변수로 취급한다.
 
 [참고](https://curryyou.tistory.com/192)
