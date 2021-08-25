@@ -52,6 +52,8 @@ git clone [원격 저장소 url]
 
 : 워킹 디렉토리에서 수정한 파일들만 저장
 
+→ **git stash pop**으로 꺼낼 수 있음! 
+
 <br>
 
 **git merge**
