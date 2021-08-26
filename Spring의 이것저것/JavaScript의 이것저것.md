@@ -83,4 +83,31 @@
 
 + 함수 내부는 물론, if문이나 for문 등의 코드 블럭에서 선언된 변수도 지역변수로 취급한다.
 
+<br>
+
+#### 3. const
+
++ 중복선언 불가능
+
+  ```javascript
+  const a = 10; 
+  const a = 20; // SyntaxError: Identifier 'a' has already been declared
+  ```
+
+  <br>
+
++ 값 재할당이 불가능한 상수
+
+  ```javascript
+  const c = 10; 
+  c = 20; // TypeError: Assignment to constant variable.
+  ```
+
+  <br>
+
++ 함수 내부는 물론, if문이나 for문 등의 코드 블럭에서 선언된 변수도 지역변수로 취급한다.
+
+<br>
+
 [참고](https://curryyou.tistory.com/192)
+
