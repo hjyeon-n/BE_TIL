@@ -56,6 +56,18 @@
   
   console.log(a); // 10
   ```
+  
+  <br>
+  
++ 변수 호이스팅이 가능
+
+  ```javascript
+  console.log(a); // undefined 
+  var a = 10; 
+  console.log(a); // 10
+  ```
+
+  
 
 <br>
 
