@@ -7,6 +7,7 @@
 #### JavaScript와 jQuery
 
 둘다 혼용해서 쓰길래 무슨 차이인가 했는데 jQuery는 Javascript의 라이브러리라고 생각하면 된다!
+참고로 Ajax도 javaScript의 라이브러리이다!
 
 <br>
 
