@@ -37,3 +37,4 @@ enum Rainbow {RED, ORANGE, YELLOW, GREEN, BLUE}
 Rainbow.RED
 ```
 
+[참고](https://www.nextree.co.kr/p11686/)
