@@ -73,3 +73,7 @@ git clone [원격 저장소 url]
 **인덱스(Index)**: 
 
 : 확정할 준비가 된 변경 사항들이 모인 영역.
+
+<br>
+
+[깃 기초는 여기서 재밌게 배울 수 있다!](https://evan-moon.github.io/2019/07/25/git-tutorial/)
