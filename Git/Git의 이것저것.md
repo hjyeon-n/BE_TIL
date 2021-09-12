@@ -77,3 +77,5 @@ git clone [원격 저장소 url]
 <br>
 
 [깃 기초는 여기서 재밌게 배울 수 있다!](https://evan-moon.github.io/2019/07/25/git-tutorial/)
+
+[Git 버전 관리](https://evan-moon.github.io/2019/07/28/git-tutorial-advanced/)
