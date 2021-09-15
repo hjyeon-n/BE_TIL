@@ -11,6 +11,7 @@
 이런 REST의 형식을 따른 시스템을 RESTful 이라고 부름
 
 [참고하면 좋을 영상!](https://youtu.be/RP_f5dMoHFc)
+[참고할 블로그!](https://evan-moon.github.io/2020/04/07/about-restful-api/)
 
 <br/>
 
