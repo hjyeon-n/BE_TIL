@@ -11,6 +11,7 @@ Elasticsearch는 Apache Lucene 기반의 Java 오픈소스 분산 검색 엔진�
 검색을 위해 단독으로 사용되기도 하고, ELK 스택으로도 사용된다.
 
 <br>
+
 ### ELK 스택...? 🙄
 
 + Logstash
