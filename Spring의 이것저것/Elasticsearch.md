@@ -79,3 +79,32 @@ Elasticsearch의 개념들은 앞서 봤던 것처럼 RDBMS에도 존재하는 �
      + 또 다른 형태의 shard라고 할 수 있음
 
 <br>
+
+### Elasticsearch 특징
+
++ Scale out
+
+  + 샤드를 통해 Scale out이 가능함
+
++ 고가용성
+
+  + Replica를 통해 데이터의 안정성을 보장
+
++ Schema Free
+
+  + JSON 문서를 통해 데이터 검색을 수행하므로 스키마 개념이 없음
+
++ Restful
+
+  + 데이터 CRUD 작업은 HTTP Restful API를 통해 수행
+
+  | Data CRUD | Elasticsearch Restful |
+  | :-------: | :-------------------: |
+  |  SELECT   |          GET          |
+  |  INSERT   |          PUT          |
+  |  UPDATE   |         POST          |
+  |  DELETE   |        DELETE         |
+
+<br>
+
+[참고](https://victorydntmd.tistory.com/308)
