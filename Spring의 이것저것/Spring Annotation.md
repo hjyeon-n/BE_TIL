@@ -17,3 +17,44 @@
 Reflection은 프로그램 실행 중 자신의 구조와 동작을 검사 및 조사, 수정하는 것을 말한다. annotation 자체는 아무런 동작을 하지 않는 단순한 선언이지만 Reflection을 이용하면 annotation의 적용 여부와 엘리먼트 값을 읽고 처리할 수 있다.
 
 <br>
+
+### Annotation 종류 😎
+
+#### @ComponentScan
+
++ @Component와 @Service, @Repository, @Controller, @Configuration이 붙은 클래스 Bean들을 찾아서 Context에 bean등록을 해 주는 Annotation
++ xml에 bean을 직접 등록하거나 위와 같이 annotation으로 간단하게 bean을 등록할 수 있다.
+
+<br>
+
+#### @Component
+
++ 개발자가 직접 작성한 클래스를 bean으로 등록하기 위한 annotation
++ `@Bean`과 다르게 `@Component`는 name이 아닌 value를 이용해 Bean의 이름을 지정한다.
+
+```java
+@Component
+public class Student {
+    public Student() {
+        System.out.println("hi");
+    }
+}
+```
+
+<br>
+
+#### @Bean
+
++ 개발자가 직접 제어가 불가능한 외부 라이브러리 등을 Bean으로 만들려할 때 사용되는 Annotation
+
+```java
+@Configuration
+public class ApplicationConfig {    
+    @Bean
+    public ArrayList<String> array(){
+        return new ArrayList<String>();
+    }   
+}
+```
+
+<br>
