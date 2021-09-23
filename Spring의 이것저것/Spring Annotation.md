@@ -58,3 +58,32 @@ public class ApplicationConfig {
 ```
 
 <br>
+
+#### @Autowired
+
++ setter method, field, constructor에서 사용하며, 타입에 따라 알아서 bean을 주입해준다.
++ type을 먼저 확인하되, 찾을 수 없는 경우 name에 따라 주입한다.
+
+✔ bean을 주입받는 방식
+
+1. @Autowired
+2. setter method
+3. constructor (@AllArgsConstructor 사용) → 권장 방식!
+
+<br>
+
+#### @Controller, @RestController
+
+둘 다 Spring의 Controller를 의미하지만, 차이가 있다.
+
+**@Controller**
+
++ view를 반환하는 게 주목적
++ API 서비스로 사용하고 싶을 땐 @ResponseBody annotation이 따로 필요
+
+**@RestController**
+
++ API 서비스로 사용하는 게 주목적
++ @RestController = @Controller + @ResponseBody
+
+<br>
