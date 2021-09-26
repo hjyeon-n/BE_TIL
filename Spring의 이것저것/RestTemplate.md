@@ -46,7 +46,22 @@ Spring에서 제공하는 간편하게 RestAPI를 호출할 수 있는 템플릿
 
 <br>
 
+### RestTemplate의 동작원리
 
+HttpClient는 HTTP를 사용하여 통신하는 범용 라이브러리이고, RestTemplate은 HttpClient 를 추상화(HttpEntity의 json, xml 등)해서 제공한다. 따라서 내부 통신(HTTP connection)에 있어서는 Apache HttpComponents 를 사용한다. 만약 RestTemplate 가 없다면, 직접 json, xml 라이브러리를 사용해서 변환해야 한다.
+
+![image](https://user-images.githubusercontent.com/62419307/133394084-37ddd0e1-708d-4341-be05-b4ca77ff027f.png)
+
+1. 어플리케이션이 RestTemplate를 생성하고, URI, HTTP메소드 등의 헤더를 담아 요청한다.
+2. RestTemplate은 HttpMessageConverter를 사용하여 requestEntity를 요청메시지로 변환한다.
+3. RestTemplate은 ClientHttpRequestFactory로 부터 ClientHttpRequest를 가져와서 요청을 보낸다.
+4. ClientHttpRequest는 요청메시지를 만들어 HTTP 프로토콜을 통해 서버와 통신한다.
+5. RestTemplate은 ResponseErrorHandler로 오류를 확인하고 있다면 처리로직으로 넘긴다.
+6. ResponseErrorHandler는 오류가 있다면 ClientHttpResponse 에서 응답 데이터를 가져와서 처리한다.
+7. RestTemplate은 HttpMessageConverter 를 이용해서 응답메시지를 java object(Class responseType) 로 변환한다.
+8. 어플리케이션에 반환된다.
+
+[참고](https://sjh836.tistory.com/141)
 
 [참고1](https://sjh836.tistory.com/141)
 
