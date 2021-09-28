@@ -76,6 +76,8 @@ public class ApplicationConfig {
 
 둘 다 Spring의 Controller를 의미하지만, 차이가 있다.
 
+<br>
+
 **@Controller**
 
 + view를 반환하는 게 주목적
