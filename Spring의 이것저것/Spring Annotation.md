@@ -105,3 +105,7 @@ setter method에 적용하면 beab 생성 시 필수 property임을 알 수 있�
 #### @Resource
 
 @Autowired와 마찬가지로 Bean 객체를 주입해 주는데 차이점은 @Autowired는 타입으로, @Resource는 이름으로 연결해 준다.
+
+<br>
+
+[참고](https://velog.io/@gillog/Spring-Annotation-%EC%A0%95%EB%A6%AC)
