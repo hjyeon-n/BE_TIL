@@ -72,6 +72,11 @@ public class ApplicationConfig {
 
 <br>
 
+#### @Inject
+@Autowired 어노테이션과 비슷한 역할을 한다.
+
+<br>
+
 #### @Controller, @RestController
 
 둘 다 Spring의 Controller를 의미하지만, 차이가 있다.
