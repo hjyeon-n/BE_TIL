@@ -107,6 +107,13 @@ setter method에 적용하면 beab 생성 시 필수 property임을 알 수 있�
 
 <br>
 
+#### @Primary
+@Qualifier처럼 같은 type의 bean들이 여러 개 존재할 때, 특정 bean을 선택할 수 있다.
+
+@Qualifier와의 차이점은 같은 우선순위로 있는 클래스가 여러 개 존재할 때, 가장 우선순위로 주입할 클래스를 선택할 수 있다는 점이다.
+
+<br>
+
 #### @Resource
 
 @Autowired와 마찬가지로 Bean 객체를 주입해 주는데 차이점은 @Autowired는 타입으로, @Resource는 이름으로 연결해 준다.
