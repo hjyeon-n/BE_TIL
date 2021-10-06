@@ -63,6 +63,7 @@ public class ApplicationConfig {
 
 + setter method, field, constructor에서 사용하며, 타입에 따라 알아서 bean을 주입해준다.
 + type을 먼저 확인하되, 찾을 수 없는 경우 name에 따라 주입한다.
++ 만약, 같은 type의 bean이 여러 개 있을 경우 특정 bean을 설정하지 않으면 어떤 bean을 주입해야 하는지 알 수가 없어서 Spring Container를 초기화하는 과정 중에 예외가 발생한다.
 
 ✔ bean을 주입받는 방식
 
