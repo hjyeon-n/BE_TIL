@@ -121,4 +121,10 @@ setter method에 적용하면 beab 생성 시 필수 property임을 알 수 있�
 
 <br>
 
-[참고](https://velog.io/@gillog/Spring-Annotation-%EC%A0%95%EB%A6%AC)
+#### @Lazy
+
+지연로딩을 지원하는 annotation이다.
+
+@Component나 @Bean Annotation과 같이 쓰는데 Class가 로드될 때 스프링에서 바로 bean등록을 마치는 것이 아니라 실제로 사용될 때 로딩이 이뤄지게 하는 방법이다.
+
+<br>
