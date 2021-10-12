@@ -29,14 +29,16 @@ Oracle's Procedure Language extension to SQL 의 약자로, 절차적 프로그�
 #### PL/SQL 프로그램 유형
 
 + 저장 프로시저 (Stored Procedures)
-  +  생성 후 데이터베이스 내에 저장됨
-  + 사용자가 호출하여 실행
+  + 생성 후 데이터베이스 내에 저장됨
+  + 사용자가 exexute 명령어를 호출하여 실행
+  <br>
 + 저장 함수(Stored Functions)
   + 저장 프로시저와 유사하나 처리 결과를 사용자에게 반환함
+  <br>
 + 트리거(Triggers)
   + 저장 프로시저의 일종
   + DML 문이 특정 table에 대해 수행될 때 자동적으로 실행됨
-  + 살행하는 주체가 DBMS
+  + 실행하는 주체가 DBMS 
 
 <br>
 
