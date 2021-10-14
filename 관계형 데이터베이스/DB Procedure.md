@@ -30,7 +30,7 @@ Oracle's Procedure Language extension to SQL 의 약자로, 절차적 프로그�
 
 + 저장 프로시저 (Stored Procedures)
   + 생성 후 데이터베이스 내에 저장됨
-  + 사용자가 exexute 명령어를 호출하여 실행
+  + 사용자가 execute 명령어를 호출하여 실행
   + BEGIN~END 절 내에 COMMIT, ROLLBACK과 같은 트랜잭션 종료 명령어 사용 가능
   <br>
 + 저장 함수(Stored Functions)
