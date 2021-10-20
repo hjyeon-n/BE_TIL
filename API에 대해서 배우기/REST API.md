@@ -11,6 +11,7 @@
 이런 REST의 형식을 따른 시스템을 RESTful 이라고 부름
 
 [참고하면 좋을 영상!](https://youtu.be/RP_f5dMoHFc)
+<br>
 [참고할 블로그!](https://evan-moon.github.io/2020/04/07/about-restful-api/)
 
 <br/>
@@ -19,7 +20,7 @@
 
 * Create: 생성 (POST)
 * Read: 조회 (GET)
-* Update: 수정 (PUT)
+* Update: 수정 (PUT) ➕ 리소스의 부분 수정은 PATCH
 * Delete:  삭제 (DELETE)
 
 <br/>
