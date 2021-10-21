@@ -20,7 +20,7 @@
 
 * Create: 생성 (POST)
 * Read: 조회 (GET)
-* Update: 수정 (PUT) ➕ 리소스의 부분 수정은 PATCH
+* Update: 수정 (PUT) ➕ 리소스의 부분 수정은 PATCH [참고](https://repo.yona.io/doortts/blog/issue/12)
 * Delete:  삭제 (DELETE)
 
 <br/>
