@@ -4,6 +4,14 @@ group by, having, order by 등 헷갈리는 것들이 많아 따로 정리하기
 
 <br>
 
+### DDL, DML, DCL
++ **DDL** : Data Definition Language
++ **DML** : Data Manipulation Language
++ **DCL** : Data Control Language
++ **TCL** : Transaction Control Language
+ 
+<br>
+
 ### SELECT문 정의 순서 🦈
 
 1. **SELECT**: 조회할 컬럼명 명시
