@@ -5,9 +5,9 @@ group by, having, order by 등 헷갈리는 것들이 많아 따로 정리하기
 <br>
 
 ### DDL, DML, DCL
-+ **DDL** : Data Definition Language
-+ **DML** : Data Manipulation Language
-+ **DCL** : Data Control Language
++ **DDL** : Data Definition Language ex) CREATE, ALTER, TRUNCATE
++ **DML** : Data Manipulation Language ex) SELECT, UPDATE, DELETE
++ **DCL** : Data Control Language ex) GRANT, REVOKE, COMMIT, ROLLBACK
 + **TCL** : Transaction Control Language
  
 <br>
